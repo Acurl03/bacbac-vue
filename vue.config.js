@@ -1,4 +1,3 @@
 module.exports = {
-  publicPath: '/vue-bacbac/',
-  
+  publicPath: '/bacbac-vue/',
 };
