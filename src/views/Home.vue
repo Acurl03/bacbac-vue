@@ -3,7 +3,7 @@
     <section class="banner">
       <img
         class="banner_bg"
-        src="../assets/img/01-index/02-main/01-banner/banner_bg.jpg"
+        src="../assets/img/01-index/02-main/01-banner/banner520.jpg"
         alt="banner"
       />
       <img
@@ -79,8 +79,9 @@
       </div>
     </section>
     <section class="swiper_news" id="news">
-      <div class="news_title d-flex justify-content-center">
-        <h2>最新消息</h2>
+      <div class="news_title">
+        <h2 class="g_fs_36">News</h2>
+        <p class="g_fs_14 g_fw_700">最新消息</p>
       </div>
       <news_swiper></news_swiper>
     </section>
@@ -166,9 +167,7 @@
     </section>
   </div>
 </template>
-<style>
-@import "../assets/css/home.css";
-</style>
+
 <script>
 // @ is an alias to /src
 import news_swiper from '@/components/NewsSwiper.vue'
@@ -181,3 +180,6 @@ export default {
   
 };
 </script>
+<style>
+@import "../assets/css/home.css";
+</style>

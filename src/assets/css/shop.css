@@ -48,99 +48,35 @@
   font-size: 18px;
   color: #39393e;
   font-weight: 700;
+  text-align: center;
 }
 
 .shop .products #product_content .product_card .product_body .price {
   font-size: 18px;
   color: #66666a;
+  text-align: center;
 }
 
 .shop .products #product_content .product_card .product_body .product_quantity {
   width: 100%;
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.shop .products #product_content .product_card .product_body .product_quantity .btn_group {
-  width: 45%;
-}
-
-.shop .products #product_content .product_card .product_body .product_quantity .btn_group .btn {
-  font-size: 20px;
-  color: #000000;
-  width: 20%;
-  height: 40px;
-  padding: 0;
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
-  float: left;
-  border: 1px solid #969696;
-  background-color: #bbe2e9;
-  margin-left: -3px;
-}
-
-.shop .products #product_content .product_card .product_body .product_quantity .btn_group .btn:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.shop .products #product_content .product_card .product_body .product_quantity .btn_group .btn:hover {
-  font-size: 24px;
-  font-weight: 900;
-}
-
-.shop .products #product_content .product_card .product_body .product_quantity .btn_group .add_down {
-  border-radius: 4px 0 0 4px;
-}
-
-.shop .products #product_content .product_card .product_body .product_quantity .btn_group .add_up {
-  border-radius: 0 4px 4px 0;
-}
-
-.shop .products #product_content .product_card .product_body .product_quantity .btn_group .item_quantity {
-  font-size: 20px;
-  width: 60%;
-  height: 40px;
-  margin-left: -1px;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  float: left;
-  border: 1px solid #969696;
-  border-radius: 0;
-}
-
-.shop .products #product_content .product_card .product_body .product_quantity .btn_group .item_quantity:focus {
-  outline: 0;
 }
 
 .shop .products #product_content .product_card .product_body .product_quantity .addchart {
-  width: 45%;
+  width: 100%;
 }
 
 .shop .products #product_content .product_card .product_body .product_quantity .addchart button {
   width: 100%;
   height: 40px;
-  background-color: #ffffff;
+  background-color: #9cdce5;
   font-size: 16px;
-  color: #9cdce5;
-  border: 1px solid #969696;
+  color: #ffffff;
+  border: none;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .shop .products #product_content .product_card .product_body .product_quantity .addchart button:hover {
-  background-color: #763134;
-}
-
-.shop .products #product_content .product_card .product_body .product_quantity .addchart button:focus {
-  outline: 0;
   background-color: #763134;
 }
 

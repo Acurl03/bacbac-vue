@@ -10,7 +10,7 @@
 .home .banner .middle_logo {
   height: 100px;
   position: absolute;
-  left: calc(50% - 132px);
+  left: calc(50% - 165px);
   top: calc(50% - 40px);
 }
 
@@ -39,7 +39,6 @@
 
 .home .about_us .title h2,
 .home .contacts .title h2 {
-  font-size: 26px;
   text-align: center;
   font-family: Montserrat, sans-serif;
   color: #666;
@@ -229,7 +228,7 @@
 @media screen and (max-width: 992px) {
   .home .about_us .bottom_deco,
   .home .contacts .bottom_deco {
-    right: 15px;
+    right: 0;
   }
 }
 
@@ -263,24 +262,14 @@
   }
 }
 
-.home .swiper_news .news_title img {
-  width: 100px;
-  margin-top: -30px;
-}
-
-.home .swiper_news .news_title h2 {
-  font-size: 26px;
+.home .swiper_news .news_title h2, .home .swiper_news .news_title p {
+  text-align: center;
+  color: #666666;
 }
 
 .home .target_web {
   width: 100%;
   background-repeat: repeat;
-}
-
-@media screen and (max-width: 768px) {
-  .home .target_web .title {
-    font-size: 32px !important;
-  }
 }
 
 .home .target_web .content {

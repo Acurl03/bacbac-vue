@@ -30,23 +30,10 @@
               <h3 class="pt-2">{{ content.name }}</h3>
               <div class="price mb-2 pl-1">NT${{ content.price }}</div>
               <div class="product_quantity d-flex justify-content-around">
-                <div class="btn_group">
-                  <button type="button" class="btn add_down">-</button>
-                  <input
-                    type="text"
-                    value="1"
-                    name="quantity"
-                    class="item_quantity"
-                  />
-                  <button type="button" class="btn add_up">+</button>
-                </div>
                 <div class="addchart">
                   <b-button type="button" @click="addToCart(content);showAlert();">
                     <font-awesome-icon icon="shopping-cart" />
                   </b-button>
-                  <!-- <b-button @click="showAlert();addToCart(content);" variant="info" class="m-1">
-                    Show alert
-                  </b-button> -->
                 </div>
 
                 <b-alert
@@ -84,12 +71,14 @@ export default {
         { id: 2, des: "文具用品" },
         { id: 3, des: "衣著用品" },
       ],
-      // successToCart: false,
       dismissSecs: 2,
       dismissCountDown: 0,
     };
   },
-  created() {
+  // created() {
+  //   this.sortProduct();
+  // },
+  mounted() {
     this.sortProduct();
   },
   // mounted() {
@@ -130,7 +119,7 @@ export default {
       //   })
       //   .catch((error) => console.log(error))
       const url =
-        "https://run.mocky.io/v3/ceb31f30-609e-4689-892c-e3881146f837";
+        "https://run.mocky.io/v3/bd464f65-c21f-4835-b87f-cdaac376072d";
 
       this.$axios.get(url).then((response) => {
         if (this.cate_index !== 0) {

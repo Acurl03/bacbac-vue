@@ -6,7 +6,7 @@
         <router-link to="/" class="logo d-inline-flex px-3">
           <img src="./assets/img/01-index/01-navbar/logo.png" alt="bac logo" />
         </router-link>
-        <div class="d-flex w-100 justify-content-end px-5">
+        <div class="d-flex w-100 justify-content-end pr-5">
           <ul class="links d-flex">
             <li id="hover_eeffect">
               <router-link to="/about">關於白白日記</router-link>
@@ -104,7 +104,21 @@
         <router-link to="/" class="logo d-inline-flex px-3">
           <img src="./assets/img/01-index/01-navbar/logo.png" alt="bac logo" />
         </router-link>
-        <section class="mb_mini_cart">
+        <section class="mb_member_cart d-flex">
+          <router-link
+            to="/login"
+            class="icon d-flex align-items-center mr-2"
+            id="mb_login"
+            v-if="isLogin === false"
+          >
+            <font-awesome-icon icon="user" />
+          </router-link>
+          <div
+            v-else-if="isLogin === true"
+            class="member_area d-flex align-items-center mr-1"
+          >
+            <a href="" @click.prevent="logout">登出</a>
+          </div>
           <router-link
             to="/user_cart"
             class="cart_btn d-flex align-items-center"
@@ -119,43 +133,6 @@
               <span class="cart_count">{{ totalCount }}</span>
             </div>
           </router-link>
-          <transition name="fade2">
-            <div
-              id="mb_min_cart_list"
-              class="mb_check_wrapper"
-              v-show="cartShow"
-              @mouseenter="showMiniCartList"
-              @mouseleave="closeMiniCartList"
-            >
-              <div id="mb_check">
-                <div
-                  class="empty d-flex justify-content-center mb-3"
-                  v-if="inCart.length === 0"
-                >
-                  您的購物車中沒有商品
-                </div>
-                <table id="mb_check_table" v-else-if="inCart.length !== 0">
-                  <thead>
-                    <tr>
-                      <th>商品名稱</th>
-                      <th>數量</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr v-for="cartItem in inCart" :key="cartItem.id">
-                      <th>{{ cartItem.name }}</th>
-                      <td>{{ cartItem.quantity }}</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <span class="checkout" v-if="inCart.length !== 0">
-                  <router-link to="/user_cart">
-                    <div @click="checkCart">前往結帳</div>
-                  </router-link>
-                </span>
-              </div>
-            </div>
-          </transition>
         </section>
       </nav>
     </header>
@@ -163,15 +140,6 @@
     <aside class="nav_mb_content" v-show="mbNavShow">
       <nav class="bg-white w-75 position-relative">
         <ul>
-          <li @click="routerSus">
-            <router-link :to="{ path: '/login' }" v-if="isLogin === false"
-              >登入 / 註冊</router-link
-            >
-            <div class="d-flex" v-else-if="isLogin === true">
-              <p class="ml-2">Hi, {{ userName }}</p>
-              <p class="hover_effect" @click.prevent="logout">登出</p>
-            </div>
-          </li>
           <li @click="routerSus">
             <router-link to="/">Home</router-link>
           </li>
@@ -337,6 +305,6 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 @import "./assets/css/app.css";
 </style>

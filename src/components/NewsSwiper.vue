@@ -15,8 +15,6 @@
 </template>
 
 <script>
-import "/static/swiper/swiper.js";
-
 export default {
   name: "swiper-grab-cursor",
   data() {

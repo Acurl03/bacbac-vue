@@ -14,6 +14,6 @@ git add -A
 git commit -m 'deploy'
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:Acurl03/vue-bacbac.git main:gh-pages
+git push -f https://github.com/Acurl03/bacbac-vue.git master:gh-pages
 
 cd -
