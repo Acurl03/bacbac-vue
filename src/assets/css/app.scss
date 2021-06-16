@@ -59,7 +59,7 @@ li {
         color: black;
         padding: 12px 0;
         margin: 0 20px;
-        &:hover {
+        &:hover, &:focus {
           color: rgb(77, 6, 6);
           border-bottom: 5px solid rgb(77, 6, 6);
         }

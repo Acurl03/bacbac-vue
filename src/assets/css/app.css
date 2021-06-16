@@ -67,7 +67,7 @@ li {
   margin: 0 20px;
 }
 
-.nav_pc .links li a:hover {
+.nav_pc .links li a:hover, .nav_pc .links li a:focus {
   color: #4d0606;
   border-bottom: 5px solid #4d0606;
 }

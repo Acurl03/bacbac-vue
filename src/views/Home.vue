@@ -147,21 +147,21 @@
             <img src="../assets/img/01-index/02-main/07-contacts/003.png" alt="">
             <span class="g_fs_18">信箱</span>
           </div>
-          <p>wliao@bloomingma.com.tw<br><br>插畫及設計相關合作洽談</p>
+          <p>wliao@bloomingma.com.tw<br>插畫及設計相關合作洽談</p>
         </div>
         <div class="col-md-4 contacts_phone">
           <div class="little_title">
             <img src="../assets/img/01-index/02-main/07-contacts/009.png" alt="">
             <span class="g_fs_18">電話</span>
           </div>
-          <p>02 2545 9268<br><br>快速的找到我<br>有關當前正在銷售的商品的查詢，請直接聯繫產品上列出的商品製造商。</p>
+          <p>02 2545 9268<br>快速的找到我<br>有關當前正在銷售的商品的查詢，請直接聯繫產品上列出的商品製造商。</p>
         </div>
         <div class="col-md-4 contacts_facebook">
           <div class="little_title">
             <img src="../assets/img/01-index/02-main/07-contacts/023.png" alt="">
             <span class="g_fs_18">Facebook</span>
           </div>
-          <p>m.me/darylhochi.illustrations<br><br>我幾乎無法回答，但我讀了一切。謝謝</p>
+          <p>m.me/darylhochi.illustrations<br>我幾乎無法回答，但我讀了一切。謝謝</p>
         </div>
       </div>
     </section>

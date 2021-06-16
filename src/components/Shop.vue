@@ -119,7 +119,7 @@ export default {
       //   })
       //   .catch((error) => console.log(error))
       const url =
-        "https://run.mocky.io/v3/bd464f65-c21f-4835-b87f-cdaac376072d";
+        "https://run.mocky.io/v3/2b1c8c2d-763c-4994-8342-58700f77a156";
 
       this.$axios.get(url).then((response) => {
         if (this.cate_index !== 0) {

@@ -33,7 +33,7 @@
 @media screen and (max-width: 1100px) {
   .home .about_us .title,
   .home .contacts .title {
-    margin: 0px;
+    margin: 0 0 25px;
   }
 }
 
@@ -42,6 +42,7 @@
   text-align: center;
   font-family: Montserrat, sans-serif;
   color: #666;
+  margin: 0;
 }
 
 .home .about_us .title p,
@@ -75,7 +76,7 @@
   .home .contacts .contacts_content .contacts_email,
   .home .contacts .contacts_content .contacts_phone,
   .home .contacts .contacts_content .contacts_facebook {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 
@@ -103,7 +104,9 @@
 .home .contacts .contacts_content .contacts_email .little_title img,
 .home .contacts .contacts_content .contacts_phone .little_title img,
 .home .contacts .contacts_content .contacts_facebook .little_title img {
-  width: 60px;
+  width: 40px;
+  margin-top: -5px;
+  margin-right: 5px;
 }
 
 .home .about_us .author_content .author_introduction .little_title span,
@@ -161,8 +164,7 @@
   text-align: justify;
   color: #656565;
   font-size: 0.9375rem;
-  padding: 0 10px 0 65px;
-  margin-top: -10px;
+  padding: 0 10px 0 45px;
 }
 
 .home .about_us .about_bacbac .bacbac_content,
