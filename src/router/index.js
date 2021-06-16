@@ -12,6 +12,8 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const router = new Router({
+  // 路由跳轉後回到頂端
+  scrollBehavior: () => ({ y: 0 }),  
   routes: [
     {
       path: '/',

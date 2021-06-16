@@ -222,6 +222,10 @@ export default {
   },
   // 側邊菜單出現背景不動
   watch: {
+    // $route: function (to, from) {
+    //   document.body.scrollTop = 0;
+    //   document.documentElement.scrollTop = 0;
+    // },
     mbNavShow(val) {
       if (val) {
         document.documentElement.style.overflow = "hidden";

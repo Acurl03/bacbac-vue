@@ -37,6 +37,7 @@ Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 
 Vue.config.productionTip = false
 
+
 new Vue({
   router,
   render: h => h(App)
