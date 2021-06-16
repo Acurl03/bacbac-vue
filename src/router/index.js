@@ -1,13 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import Home from '../views/Home.vue'
-// import Shop from '../components/Shop.vue'
-// import Error from '../components/ErrorPage.vue'
-// import LoginRegister from '../components/LoginRegister.vue'
-// import UserCart from '../components/UserCart.vue'
-// import OrderFinish from '../components/OrderFinish.vue'
-// import About from '../components/About.vue'
-// import News from '../components/News.vue'
 
 Vue.use(Router)
 
