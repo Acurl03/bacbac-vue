@@ -1,0 +1,318 @@
+body,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.g_fs_14 {
+  font-size: 0.875rem !important;
+}
+
+.g_fs_18 {
+  font-size: 1.125rem !important;
+}
+
+.g_fs_36 {
+  font-size: 2.25rem !important;
+  @media screen and (max-width: 992px) {
+    font-size: 1.5rem !important;
+  }
+}
+
+.g_fw_700 {
+  font-weight: 700 !important;
+}
+
+// 電腦版 上選單
+.nav_pc {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+
+  .logo {
+    img {
+      height: 60px;
+    }
+  }
+
+  .links {
+    li {
+      font-size: 20px;
+      margin: auto;
+      a {
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        padding: 12px 0;
+        margin: 0 20px;
+        &:hover,
+        &:focus {
+          color: rgb(77, 6, 6);
+          border-bottom: 5px solid rgb(77, 6, 6);
+        }
+      }
+    }
+  }
+  .member_cart_area {
+    #login,
+    #cart {
+      color: #666666;
+      &:hover {
+        color: rgb(77, 6, 6);
+      }
+    }
+    .icon {
+      text-decoration: none;
+      font-size: 20px;
+      .cart_cursor {
+        padding: 15px 0;
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+    .member_area {
+      font-size: 20px;
+      a {
+        text-decoration: none;
+        color: #666666;
+        &:hover {
+          color: rgb(77, 6, 6);
+        }
+      }
+    }
+
+    // vue transition
+    // 迷你購物車轉場
+    .fade-enter-active,
+    .fade-leave-active {
+      transition: opacity 0.5s;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+      opacity: 0;
+    }
+
+    .check_wrapper {
+      position: absolute;
+      width: 400px;
+      padding: 0 0 0 0;
+      right: 40px;
+      top: 60px;
+      background-color: #fff;
+      z-index: 1000;
+      #check {
+        color: #4d3126;
+        width: auto;
+        background: #fff;
+        border: 1px #ccc solid;
+        padding-top: 15px;
+        z-index: 2000;
+        #check_table {
+          width: 90%;
+          margin: 0 5%;
+          thead {
+            tr {
+              th {
+                font-weight: bold;
+                text-align: center;
+                border-bottom: 1px solid #e6e6e6;
+              }
+            }
+          }
+          tbody {
+            tr {
+              th {
+                text-align: left;
+              }
+              td {
+                text-align: center;
+              }
+            }
+          }
+        }
+        .checkout {
+          width: 380px;
+          margin: 10px 0;
+          display: flex;
+          justify-content: flex-end;
+
+          a {
+            text-decoration: none;
+            div {
+              width: 90px;
+              height: 30px;
+              text-align: center;
+              line-height: 1.9;
+              color: #fff;
+              letter-spacing: 1px;
+              background-color: rgb(77, 6, 6);
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 手機版 上選單
+.nav_mb {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+
+  display: none;
+
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+
+  .btn:focus {
+    box-shadow: 0;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 58px);
+    img {
+      height: 50px;
+    }
+  }
+
+  .mb_member_cart {
+    #mb_login {
+      color: #521917;
+      padding-top: 10px;
+      &:hover {
+        color: #666666;
+      }
+    }
+    .member_area {
+      padding-top: 10px;
+
+      a {
+        text-decoration: none;
+        color: #666666;
+        &:hover {
+          color: rgb(77, 6, 6);
+        }
+      }
+    }
+    .cart_btn {
+      text-decoration: none;
+      position: relative;
+      padding: 0 10px;
+      margin-top: 10px;
+      color: rgb(77, 6, 6);
+      &:hover {
+        color: #666666;
+      }
+
+      i {
+        font-size: 20px;
+      }
+
+      .cart_count {
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+        color: #fff;
+        background-color: #a3d3db;
+        border-radius: 10px;
+
+        display: inline;
+        text-align: center;
+        position: absolute;
+        right: -3px;
+        top: -5px;
+        z-index: 10;
+      }
+    }
+  }
+}
+// 手機板 側選單
+.nav_mb_content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+
+  display: flex;
+
+  nav {
+    max-width: 320px;
+    height: 100%;
+    position: fixed;
+
+    .login {
+      width: 100%;
+      color: black;
+      padding: 16px 24px;
+      text-decoration: none;
+
+      display: block;
+      border-bottom: 1px solid #f8f9f9;
+    }
+
+    ul {
+      width: 100%;
+
+      li {
+        .hover_effect:hover {
+          color: rgb(77, 6, 6);
+          cursor: pointer;
+        }
+
+        p {
+          padding: 16px 0 16px 16px;
+        }
+        a {
+          background-color: #ebebeb;
+          color: #521917;
+          padding: 16px 24px;
+          border-bottom: 1px solid #f8f9f9;
+          text-decoration: none;
+
+          display: block;
+        }
+      }
+    }
+  }
+  .nav_mb_content_close {
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .xicon {
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+
+footer {
+  .belong {
+    font-size: 20px;
+    padding-bottom: 15px;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}

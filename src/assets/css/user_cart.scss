@@ -1,0 +1,346 @@
+/* Global "table" column settings */
+.product-image {
+  float: left;
+  width: 20%;
+  font-size: 18px;
+  @media screen and (max-width: 1100px) {
+    font-size: 14px;
+  }
+}
+
+.product-details {
+  float: left;
+  width: 30%;
+  font-size: 18px;
+  @media screen and (max-width: 1100px) {
+    font-size: 14px;
+  }
+}
+
+.product-price {
+  float: left;
+  width: 12%;
+  font-size: 18px;
+  @media screen and (max-width: 1100px) {
+    font-size: 14px;
+  }
+}
+
+.product-quantity {
+  float: left;
+  width: 17%;
+  font-size: 18px;
+  @media screen and (max-width: 1100px) {
+    font-size: 14px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+}
+
+.product-removal {
+  float: left;
+  width: 9%;
+  font-size: 18px;
+  @media screen and (max-width: 1100px) {
+    font-size: 14px;
+  }
+}
+
+.product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+  font-size: 18px;
+  @media screen and (max-width: 1100px) {
+    font-size: 14px;
+  }
+}
+
+button:focus {
+  outline: 0;
+}
+
+/* This is used as the traditional .clearfix class */
+.group:before,
+.group:after {
+  content: '';
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+/* Apply clearfix in a few places */
+.shopping-cart,
+.column-labels,
+.product,
+.totals-item {
+  @extend .group;
+}
+
+/* Apply dollar signs */
+.product .product-price:before,
+.product .product-line-price:before,
+.totals-value:before {
+  content: '$';
+}
+
+/* Body/Header stuff */
+h1 {
+  margin: 50px 0 10px 30px;
+  font-size: 26px !important;
+  @media screen and (max-width: 1100px) {
+    font-size: 20px !important;
+  }
+}
+
+label {
+  color: black;
+}
+
+.shopping-cart {
+  margin-top: -65px;
+  background-color: #fff;
+  padding: 30px;
+  @media screen and (max-width: 1100px) {
+    margin-top: -60px;
+  }
+}
+
+/* Column headers */
+.column-labels {
+  label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    @media screen and (max-width: 1100px) {
+      padding-bottom: 10px;
+    }
+  }
+
+  .product-image,
+  .product-details,
+  .product-removal {
+    text-indent: -9999px;
+  }
+}
+
+/* Product entries */
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+
+  .product-image {
+    text-align: center;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  .product-details {
+    .product-title {
+      margin-right: 20px;
+      font-size: 18px;
+      @media screen and (max-width: 1100px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .product-quantity {
+    .decrease,
+    .increase {
+      height: 34px;
+      width: 30px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background-color: #fff;
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -6px;
+    }
+
+    .decrease {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .increase {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    input {
+      width: 35px;
+      height: 34px;
+      padding: 0;
+      background-color: #fff;
+      border-top: 1px solid #e1e1e1;
+      border-bottom: 1px solid #e1e1e1;
+      border-right: none;
+      border-left: none;
+      outline: none;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      margin-top: -6px;
+    }
+  }
+
+  .remove-product {
+    width: 14px;
+    height: 14px;
+    background-image: url('../../assets/img/02-products/icon_del_type2.gif');
+    margin-top: 8px;
+    cursor: pointer;
+    @media screen and (max-width: 650px) {
+      margin-top: 0px;
+
+    }
+  }
+
+  .remove-product:hover {
+    background-position-y: -14px;
+  }
+}
+
+/* Totals section */
+.totals {
+  .totals-item {
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+
+    label {
+      float: left;
+      clear: both;
+      width: 79%;
+      text-align: right;
+      font-size: 18px;
+      @media screen and (max-width: 1100px) {
+        font-size: 14px;
+      }
+    }
+
+    .totals-value {
+      float: right;
+      width: 21%;
+      text-align: right;
+      font-size: 18px;
+      @media screen and (max-width: 1100px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.checkout_btn {
+  float: right;
+  border: 0;
+  border-radius: 4px;
+
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #a5a5a5;
+  color: #fff;
+  font-size: 24px;
+  @media screen and (max-width: 1100px) {
+    font-size: 20px;
+  }
+}
+
+.checkout_btn:hover {
+  background-color: #763134;
+}
+
+/* Make adjustments for tablet */
+@media screen and (max-width: 650px) {
+  .shopping-cart {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+
+  .column-labels {
+    display: none;
+  }
+
+  .product-image {
+    float: right;
+    width: auto;
+
+    img {
+      margin: 0 0 10px 10px;
+    }
+  }
+
+  .product-details {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .product-price {
+    clear: both;
+    width: 70px;
+    margin-top: 3px;
+  }
+
+  .product-quantity {
+    width: 120px;
+  }
+
+  .product-quantity:before {
+    content: 'x';
+    margin-right: 10px;
+  }
+
+  .product-removal {
+    width: auto;
+    margin: 5px 10px 0 ;
+
+  }
+
+  .product-line-price {
+    float: right;
+    width: 70px;
+  }
+}
+
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+  .product-removal {
+    float: right;
+  }
+
+  .product-line-price {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .product .product-line-price:before {
+    content: 'Item Total: $';
+  }
+
+  .totals {
+    .totals-item {
+      label {
+        width: 60%;
+      }
+
+      .totals-value {
+        width: 40%;
+      }
+    }
+  }
+}

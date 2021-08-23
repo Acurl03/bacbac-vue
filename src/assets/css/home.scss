@@ -1,0 +1,175 @@
+.home {
+  .banner {
+    width: 100%;
+    position: relative;
+    .banner_bg {
+      width: 100%;
+    }
+    .middle_logo {
+      height: 100px;
+      position: absolute;
+      left: calc(50% - 165px);
+      top: calc(50% - 40px);
+
+      @media screen and (max-width: 1100px) {
+        display: none;
+      }
+    }
+  }
+
+  .about_us,
+  .contacts {
+    padding: 50px 0;
+
+    .title {
+      margin: 25px;
+      @media screen and (max-width: 992px) {
+        margin: 0 0 15px 0;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        color: #666;
+        margin-bottom: 0;
+      }
+
+      p {
+        text-align: center;
+        color: #656565;
+      }
+    }
+    
+    .author_content,
+    .contacts_content {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      .author_introduction,
+      .author_experience,
+      .author_interest,
+      .contacts_email,
+      .contacts_phone,
+      .contacts_facebook {
+        @media screen and (max-width: 768px) {
+          margin-bottom: 15px;
+        }
+        .little_title {
+          img {
+            width: 40px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+          }
+          span {
+            color: #666;
+            font-size: 22px;
+          }
+        }
+
+        p {
+          text-align: justify;
+          color: #656565;
+          font-size: 0.9375rem;
+          padding-left: 40px;
+          margin-top: -5px;
+        }
+      }
+    }
+    .about_bacbac {
+      .bacbac_content {
+        border-radius: 4px;
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+          0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        padding: 20px;
+        .little_title {
+          display: flex;
+          align-items: center;
+          @media screen and (max-width: 768px) {
+            justify-content: center;
+          }
+          .title_deco {
+            width: 40px;
+            @media screen and (max-width: 768px) {
+              margin-left: -35px;
+            }
+          }
+          span {
+            font-size: 22px;
+          }
+        }
+
+        p {
+          text-align: justify;
+          font-size: 0.9375rem;
+          letter-spacing: 1.5px;
+          color: #666666;
+          padding: 0 15px;
+        }
+      }
+    }
+    .bottom_deco {
+      width: 150px;
+      bottom: 0;
+      right: 60px;
+      @media screen and (max-width: 992px) {
+        width: 100px;
+        right: 0;
+      }
+    }
+  }
+
+  .swiper_news {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #eee;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .news_title {
+      width: 100%;
+      margin: 25px 0 20px;
+      @media screen and (max-width: 1100px) {
+        margin: 0 0 20px;
+      }
+      h2,
+      p {
+        text-align: center;
+        color: #666666;
+      }
+    }
+  }
+
+  .target_web {
+    width: 100%;
+    background-repeat: repeat;
+
+    .content {
+      margin: 20px 0 40px;
+      text-align: justify;
+    }
+
+    .line_btn,
+    .yoda_btn {
+      width: fit-content;
+      border: none;
+      border-radius: 50px;
+      padding: 15px 30px;
+      a {
+        text-decoration: none;
+        color: #5c5c5c;
+      }
+    }
+
+    .line_img {
+      width: 100%;
+    }
+    .yoda_factory_img {
+      width: 540px;
+      @media screen and (max-width: 1199px) {
+        width: 100%;
+      }
+    }
+  }
+}

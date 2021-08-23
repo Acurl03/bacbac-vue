@@ -1,0 +1,127 @@
+.login-register {
+  max-width: 500px;
+  width: 320px;
+  padding: 60px 0;
+  margin: 0 auto;
+}
+
+.login-register .login-register-tab {
+  display: block;
+}
+
+.login-register .login-register-tab .tabs {
+  display: inline-block;
+  width: 160px;
+  border: 1px solid #eee;
+  border-top: 3px solid #eee;
+  margin: 0 0 -1px 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 40px;
+  color: #d2d2d2;
+  background-color: #fafafa;
+}
+
+.login-register .login-register-tab .tab-active {
+  border-top: 3px solid #86abc0;
+  border-bottom: 1px solid #fff;
+  color: #706e6c;
+  background-color: #fff;
+}
+
+.login-register #login-area {
+  border: 1px solid #ededed;
+}
+
+.login-register #login-area .input-group {
+  width: 280px;
+  border-bottom: 1px solid #eee;
+  margin: 20px auto;
+}
+
+.login-register #login-area .input-group label {
+  position: absolute;
+  top: 12px;
+  display: none;
+  color: #cdcdcd;
+  cursor: text;
+}
+
+.login-register #login-area .input-group input {
+  height: 40px;
+  width: 260px;
+  padding-right: 20px;
+  border: 0;
+  outline: none;
+  color: #6b6b6b;
+  letter-spacing: 1px;
+}
+
+.login-register #login-area .input-group ::-webkit-input-placeholder {
+  color: #c9c8c8;
+}
+
+.login-register #login-area .input-group :-ms-input-placeholder {
+  color: #c9c8c8;
+}
+
+.login-register #login-area .input-group ::-ms-input-placeholder {
+  color: #c9c8c8;
+}
+
+.login-register #login-area .input-group ::placeholder {
+  color: #c9c8c8;
+}
+
+.login-register #login-area .login_btn {
+  width: 280px;
+  margin: 0 auto 20px;
+  background-color: #ffc107;
+}
+
+.login-register #register-area {
+  border: 1px solid #ededed;
+}
+
+.login-register #register-area .input-group {
+  width: 280px;
+  border-bottom: 1px solid #eee;
+  margin: 20px auto;
+}
+
+.login-register #register-area .input-group .label {
+  width: 100%;
+}
+
+.login-register #register-area .input-group input {
+  width: 260px;
+  height: 40px;
+  outline: none;
+  border: 0;
+  color: #6b6b6b;
+  letter-spacing: 1px;
+}
+
+.login-register #register-area ::-webkit-input-placeholder {
+  color: #c9c8c8;
+}
+
+.login-register #register-area :-ms-input-placeholder {
+  color: #c9c8c8;
+}
+
+.login-register #register-area ::-ms-input-placeholder {
+  color: #c9c8c8;
+}
+
+.login-register #register-area ::placeholder {
+  color: #c9c8c8;
+}
+
+.login-register #register-area .register_btn {
+  width: 280px;
+  margin: 0 auto 20px;
+  background-color: #ffc107;
+}
+/*# sourceMappingURL=login_register.css.map */
